@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Color Changer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <section class="color-card">
+            <div class="small-label">BEGINNER FRONTEND • DAY 9</div>
+            <h1>Background Color Changer</h1>
+            <p class="intro">Choose a color and give your page a fresh new look!</p>
+            <div class="color-preview" id="colorPreview">
+                <span id="colorName">Current background</span>
+                <strong id="colorCode">#F4F5FA</strong>
+            </div>
+            <h2>Choose a color</h2>
+            <div class="color-buttons">
+                <button class="color-btn red" data-color="#F87171">Red</button>
+                <button class="color-btn green" data-color="#4ADE80">Green</button>
+                <button class="color-btn blue" data-color="#60A5FA">Blue</button>
+                <button class="color-btn yellow" data-color="#FDE047">Yellow</button>
+            </div>
+            <div class="divider"></div>
+            <h2>Want to try something different?</h2>
+            <div class="action-buttons">
+                <button id="randomBtn" class="random-btn">
+                ✨ Random Color
+                </button>
+                <button id="resetBtn" class="reset-btn">
+                ↺ Reset
+                </button>
+            </div>
+            <p class="hint">Tip: Click any color button to change the page background.</p>
+        </section>
+        <footer>Made with HTML, CSS & JavaScript</footer>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

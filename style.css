@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    font-family: Arial, sans-serif;
+    background-color: #F4F5FA;
+    color: #252944;
+    transition: background-color 0.5s ease;
+}
+.container {
+    width: 100%;
+    max-width: 650px;
+    text-align: center;
+}
+.color-card {
+    background-color: white;
+    padding: 42px 38px;
+    border-radius: 20px;
+    box-shadow: 0 15px 45px rgba(35, 42, 75, 0.12);
+}
+.small-label {
+    color: #777FA5;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+h1 {
+    color: #252944;
+    font-size: 30px;
+    margin-bottom: 12px;
+}
+.intro {
+    color: #777;
+    line-height: 1.6;
+    margin-bottom: 28px;
+}
+.color-preview {
+    background: #F4F5FA;
+    border: 1px solid #E5E7F0;
+    border-radius: 14px;
+    padding: 20px;
+    margin-bottom: 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.color-preview span {
+    color: #777;
+    font-size: 13px;
+}
+.color-preview strong {
+    color: #252944;
+    font-size: 20px;
+}
+h2 {
+    font-size: 16px;
+    margin-bottom: 16px;
+}
+.color-buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+button {
+    border: none;
+    border-radius: 10px;
+    padding: 13px 10px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s ease,
+                box-shadow 0.2s ease;
+}
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 7px 14px rgba(0, 0, 0, 0.12);
+}
+button:active {
+    transform: scale(0.97);
+}
+.red {
+    background-color: #F87171;
+    color: #651B1B;
+}
+.green {
+    background-color: #4ADE80;
+    color: #14532D;
+}
+.blue {
+    background-color: #60A5FA;
+    color: #153E75;
+}
+.yellow {
+    background-color: #FDE047;
+    color: #713F12;
+}
+.divider {
+    height: 1px;
+    background-color: #ECEEF4;
+    margin: 30px 0;
+}
+.action-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+.random-btn {
+    background-color: #6558D3;
+    color: white;
+}
+.reset-btn {
+    background-color: #EEF0F7;
+    color: #343852;
+}
+.hint {
+    color: #9295A7;
+    font-size: 12px;
+    margin-top: 24px;
+}
+footer {
+    color: #777FA5;
+    font-size: 12px;
+    margin-top: 20px;
+}
+@media (max-width: 520px) {
+    .color-card {
+        padding: 30px 20px;
+    }
+    h1 {
+        font-size: 25px;
+    }
+    .color-buttons {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .action-buttons {
+        flex-direction: column;
+    }
+}
